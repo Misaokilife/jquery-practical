@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyProfile</title>
+        <meta name="description" content="Kazuki Asahinaの自己紹介と趣味の写真を掲載するサイト">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1>
+                    <a href="index.html" id="top-title">My Profile</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about" class="nav-menu" id="nav-about">About</a></li>
+                        <li><a href="#works"  class="nav-menu">Works</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <!-- カルーセル -->
+                <div id="carousel-section">
+                    <div class="carousel">
+                        <div>
+                          <img class="carouselImg" src="images/main1.png">
+                        </div>
+                        <div>
+                          <img class="carouselImg" src="images/main2.png">
+                        </div>
+                        <div>
+                          <img class="carouselImg" src="images/main3.png">
+                        </div>
+                    </div>
+                </div>
+                <section id="about">
+                    <h2 class="index-h2">About</h2>
+                    <div id="about-box">
+                        <img id="profile-pic" src="images/about.png" alt="プロフィール画像">
+                        <div id="about-detail">
+                            <h3 id="profile-name">Kazuki Asahina</h3>
+                            <ul>
+                                <li>25歳 長野県佐久市出身</li>
+                                <li>ソフトウェア業界でマーケティングに従事</li>
+                                <li>趣味はカメラ、愛機はCanon</li>
+                                <li>自然を撮影するのが好きで、海や山によく行く</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="works">
+                    <h2 class="index-h2">Works</h2>
+                    <div id="works-container">
+                        <div class="works-items">
+                            <img class="works-img" src="images/works1.png" alt="新潟の日本海">
+                            <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+                        </div>
+                        <div class="works-items">
+                            <img class="works-img" src="images/works2.png" alt="冠雪した御嶽山">
+                            <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+                        </div>
+                        <div class="works-items"> 
+                            <img class="works-img" src="images/works3.png" alt="京都の街並み">
+                            <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p id="copy-right">© MyProfile. All rights reserved.</p>
+        </footer>
+
+        <!-- TOPに戻るボタン -->
+        <a href="#" id="top-button">TOP</a>
+
+        <!-- モーダル -->
+         <div class="modal-bgr">
+            <span id="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="拡大画像">
+         </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+</html>
